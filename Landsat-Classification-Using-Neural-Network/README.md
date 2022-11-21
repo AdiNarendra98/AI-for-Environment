@@ -1,8 +1,12 @@
 # Landsat Classification Using Neural Networks
-This the code approach to the [**Playlist by Pratyush Tripathy**](https://www.youtube.com/playlist?list=PL5VtL7Y4tgIl_wNWdus4_CwWvmdKCH7bz) on using neural networks to classify landcover in cities of Bangalore and Hyderabad.
+
+**This the code for a step-by-step approach to the [**Playlist by Pratyush Tripathy**](https://www.youtube.com/playlist?list=PL5VtL7Y4tgIl_wNWdus4_CwWvmdKCH7bz) on Landsat 5 multispectral data classification or simple terms using neural networks to classify landcover in cities of Bangalore and Hyderabad(in this use-case)**
 
 ## Results
-
+* ### <ins>Hyderabad built-up layer as predicted by the model using the Multispectral Data</ins>
+<p align="center">
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/Landsat-Classification-Using-Neural-Network/images/Hyd%20O:P.gif" width="800" height="400"><br>
+</p>
 
 
 ## Dataset
@@ -12,6 +16,13 @@ This the code approach to the [**Playlist by Pratyush Tripathy**](https://www.yo
 <p align="center">
 <img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/Landsat-Classification-Using-Neural-Network/images/ss1.png " width="800" height="400"><br>
 <b>Histogram of the Landsat 5 Multispectral</b><br>
+</p>
+
+- <ins>**Training Data Sample**</ins>:
+
+<p align="center">
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/Landsat-Classification-Using-Neural-Network/images/Beng%20Train.webp  " width="800" height="400"><br>
+<b>Multispectral training data and its corresponding binary built-up layer of Bangalore City</b><br>
 </p>
 
 ## Dependencies
