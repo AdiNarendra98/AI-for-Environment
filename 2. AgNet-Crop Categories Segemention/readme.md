@@ -21,7 +21,7 @@
    * Use of **skip connections**.
    * Use of **GlobalMaxPool2D** instead of MaxPool2D.
    * Use of **Spatial Excitations**.
-   * Use of **PRelu and Leaky Relus**.
+   * Use of **PRelu and Leaky Relu**.
 
 <p align="center">
 <img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/Model%20Modifications.png" width="350" height="350"><br>
