@@ -3,7 +3,9 @@
 **This the code for a step-by-step approach to the [**Playlist by Pratyush Tripathy**](https://www.youtube.com/playlist?list=PL5VtL7Y4tgIl_wNWdus4_CwWvmdKCH7bz) on Landsat 5 multispectral data classification or simple terms using neural networks to classify landcover in cities of Bangalore and Hyderabad(in this use-case)**
 
 ## Results
-* ### <ins>Hyderabad built-up layer as predicted by the model using the Multispectral Data</ins>
+
+- ### <ins>Hyderabad built-up layer as predicted by the model using the Multispectral Data</ins>
+
 <p align="center">
 <img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/Landsat-Classification-Using-Neural-Network/images/Hyd%20O:P.gif" width="800" height="400"><br>
 </p>
