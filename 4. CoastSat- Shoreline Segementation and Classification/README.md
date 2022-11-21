@@ -5,16 +5,9 @@
 
 CoastSat is an open-source software toolkit written in Python that enables users to obtain time-series of shoreline position at any coastline worldwide from 30+ years (and growing) of publicly available satellite imagery.This Repo is an attempt for reimplementing and working on the brilliant work done by [Killian Dos](https://github.com/kvos/CoastSat).
 
-- Visit the Website here 👉🏻 : [**CoastSat**](http://coastsat.wrl.unsw.edu.au/) 
+### - Visit the Website 👉🏻 : [CoastSat](http://coastsat.wrl.unsw.edu.au/) 
 
-## Sample Result
-
-![Alt text](https://github.com/kvos/CoastSat/blob/master/doc/example.gif)
-
-
-- Visit the Website here 👉🏻 : [CoastSat website](http://coastsat.wrl.unsw.edu.au/) 
-
-### Project description
+## Project description
 
 Satellite remote sensing can provide low-cost long-term shoreline data capable of resolving the temporal scales of interest to coastal scientists and engineers at sites where no in-situ field measurements are available. CoastSat enables the non-expert user to extract shorelines from Landsat 5, Landsat 7, Landsat 8, Landsat 9 and Sentinel-2 images.
 The shoreline detection algorithm implemented in CoastSat is optimised for sandy beach coastlines. It combines a sub-pixel border segmentation and an image classification component, which refines the segmentation into four distinct categories such that the shoreline detection is specific to the sand/water interface.
@@ -26,6 +19,14 @@ The toolbox has four main functionalities:
 4. tidal correction using measured water levels and an estimate of the beach slope.
 5. post-processing of the shoreline time-series, despiking and seasonal averaging.
 6. validation example at Narrabeen
+
+
+## Sample Result
+
+![Alt text](https://github.com/kvos/CoastSat/blob/master/doc/example.gif)
+
+
+- Visit the Website here 👉🏻 : [CoastSat website](http://coastsat.wrl.unsw.edu.au/) 
 
 ## 1. Installation
 
