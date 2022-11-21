@@ -8,3 +8,18 @@
 | ------------- | ------------- |
 | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/real2.png) | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/pred1.png)  |
 | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/real1.png)  | ![pred2](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/pred2.png)  |
+| ![real3](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/real3.png)  |  ![pred3](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/pred3.png)  |
+
+## Dataset
+- ### Agnet Dataset: [Link](https://github.com/ZihengSun/Ag-Net-Dataset)
+- ### Color Map for Crops : [Link](https://github.com/ZihengSun/Ag-Net-Dataset/blob/master/colormap.py)
+
+## Architecture Used and Modifications
+- ### Basic Architecture- [**U-Net**](https://nn.labml.ai/unet/index.html)
+
+- ### Modifications Made:
+   * Use of skip connections.
+   * Use of GlobalMaxPool2D instead of MaxPool2D.
+   * Use of Spatial Excitations.
+   * Use of PRelu and Leaky Relus.
+
