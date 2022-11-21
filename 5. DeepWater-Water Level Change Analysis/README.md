@@ -1,6 +1,6 @@
 # Deep Water
 
-This repo is the reimplementation of the [Deep-Water Repo by Maximiliano Beber](https://github.com/maxbeber/deep-water) a project aims to track changes in water level using satellite imagery and deep learning.
+- This repo is the reimplementation of the [Deep-Water Repo by Maximiliano Beber](https://github.com/maxbeber/deep-water) a project aims to **track changes in Water Level using Satellite Imagery and Deep learning**.
 
 ## Introduction
 
@@ -156,16 +156,16 @@ A Demo is available [here](https://drive.google.com/file/d/1iATFNuEvBrYWUtnZvZTD
 
 The following libraries are required to create the virtual environment. The creation of the virtual environment is detailed in the next section.
 
-- Cython
-- Dash
-- Matplotlib
-- NumPy
-- Pillow
-- Plotly
-- [Pydensecrf](https://github.com/lucasb-eyer/pydensecrf)
-- Rasterio
-- Requests
-- Tensorflow 2.4
+- [**Cython**](https://cython.org)
+- [**Dash**](https://dash.plotly.com/introduction)
+- [**Matplotlib**](https://pypi.org/project/matplotlib/)
+- [**NumPy**](https://pypi.org/project/numpy/)
+- [**Pillow**](https://pypi.org/project/Pillow/)
+- [**Plotly**](https://plotly.com/python/getting-started/)
+- [**Pydensecrf**](https://github.com/lucasb-eyer/pydensecrf)
+- [**Rasterio**](https://pypi.org/project/rasterio/)
+- [**Requests**](https://pypi.org/project/requests/)
+- [**Tensorflow 2.4**](https://stackoverflow.com/questions/71211482/how-do-i-install-tensorflow-2-4-0)
 
 ## Virtual Environement
 
