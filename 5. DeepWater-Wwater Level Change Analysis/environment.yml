@@ -1,0 +1,19 @@
+name: deep-water
+channels:
+  - anaconda
+  - conda-forge
+dependencies:
+  - jupyter
+  - matplotlib
+  - numpy
+  - pip
+  - pylint
+  - python=3.8.5
+  - dash
+  - pip:
+      - cython
+      - Pillow
+      - rasterio
+      - requests
+      - tensorflow==2.4
+      - git+https://github.com/lucasb-eyer/pydensecrf.git
