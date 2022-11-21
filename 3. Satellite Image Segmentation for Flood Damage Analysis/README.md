@@ -1,10 +1,13 @@
-# Satellite-Image-Segmentation-for-Flood-Damage-Analysis
-## Data Source
+## Satellite Image-Segmentation for Flood-Damage Analysis
+This repo is for the reimplementation of the work done by [Kunal](https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis) for segmenting satellite images for analyzing flood damages using publicly available images and data.
 
-Free public images: Sentinel dataset of Very High Resolution Images (1973 by 2263 pixels) with a resolution of .5m per pixel was used. Masks (960 by 960 pixels) with resolution of 1m per pixel were used for both building and damage detection.<br><br>
-**Data** : https://s3.eu-central-1.amazonaws.com/corupublic/AAAI_harvey_data/harvey.zip
+## Dataset
 
-### Data
+- **Free public images**: Sentinel dataset of Very High Resolution Images (1973 by 2263 pixels) with a resolution of .5m per pixel was used. Masks (960 by 960 pixels) with resolution of 1m per pixel were used for both building and damage detection.
+
+- **Dataset** : [AAAI Harvey Data Link](https://s3.eu-central-1.amazonaws.com/corupublic/AAAI_harvey_data/harvey.zip)
+
+### Sample Data 
 <img src="https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis/blob/main/Images/Image_vhr.png"/>
 
 
@@ -14,20 +17,24 @@ Free public images: Sentinel dataset of Very High Resolution Images (1973 by 226
 <li> Images and their respective Masks were cut into 4 patches of resolution (512,512) each.</li>
 <li> Both VHR Images and Masks were converted from int tensor (0-255) to float tensor (0-1) and normalized using imagenet stats .</li><br>
 
-<b> BICUBIC Resampling </b> : Bicubic resampling computes new pixels using cubic splines. When upsampling, this method operates on the 4 by 4 cell of pixels surrounding each new pixel location. This is the recommended resampling method for most images as it represents a good trade-off between accuracy and speed.
+- <ins>**BICUBIC Resampling**</ins> : Bicubic resampling computes new pixels using cubic splines. When upsampling, this method operates on the 4 by 4 cell of pixels surrounding each new pixel location. This is the recommended resampling method for most images as it represents a good trade-off between accuracy and speed.
 
 ## Image Patches
+| Patches |
+| ------------- |
+| ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/3.%20Satellite%20Image%20Segmentation%20for%20Flood%20Damage%20Analysis/Images/patches.png) |
 
-<img src="https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis/blob/main/Images/patches.png"/>
 
 ## Training
 
-### Model: UNET with Resnet-34 (pertained on cifar-10 imagenet model) as a backbone.
+- ### Model: <ins>UNET with Resnet-34 (pertained on Cifar-10 Imagenet Model) as a Backbone</ins>.
 The <b> U-Net </b> is convolutional network architecture for fast and precise segmentation of images. It is an encoder-decoder style network.<br>
 Using a U-Net with a pretrained resnet encoder means that the encoder part of the U-Net will be replaced by the resnet pretrained weights. It's a concept of transfer learning, i.e we don't need to train the model from scratch.<br>
+<p align="center">
 <img src="https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis/blob/main/Images/unet.png" width="600">
+</p> 
 
-### Optimizer: ADAM
+- ### Optimizer: <ins>ADAM</ins>
 
 <b> Adaptive Moment Estimation (Adam) </b> is  an optimizer that computes adaptive learning rates for each parameter. In addition to storing an exponentially decaying average of past squared gradients vt like RMSprop, Adam also keeps an exponentially decaying average of past gradients mt, similar to momentum.
 <li> gt =  Gradient Calculated </li>
@@ -35,39 +42,35 @@ Using a U-Net with a pretrained resnet encoder means that the encoder part of th
 <li> vt =  RMSprop </li><br>
 <img src="https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis/blob/main/Images/moment.png" width="300">
 
-### Scheduler: One Cycle Policy
+- ### Scheduler: <ins>One Cycle Policy(3-Step Approach)</ins>
+ <li>We progressively increase our learning rate from base_lr to lr_max and at the same time we progressively decrease our momentum from mom_max to mom_min.
+ <li>We do the exact opposite: we progressively decrease our learning rate from lr_max to lr_max/div_factor and at the same time we progressively increase our momentum from mom_min to mom_max.
+ <li>We further decrease our learning rate from lr_max/div_factor to lr_max/(div_factor x 100) and we keep momentum steady at mom_max.
 
-The 1cycle policy has three steps:
-We progressively increase our learning rate from base_lr to lr_max and at the same time we progressively decrease our momentum from mom_max to mom_min.
+<p align="center">
+<img src="https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis/blob/main/Images/onefit.png" width="600" height="300"><br>
+</p>              			
 
-We do the exact opposite: we progressively decrease our learning rate from lr_max to lr_max/div_factor and at the same time we progressively increase our momentum from mom_min to mom_max.
 
-We further decrease our learning rate from lr_max/div_factor to lr_max/(div_factor x 100) and we keep momentum steady at mom_max.
-              			
-<img src="https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis/blob/main/Images/onefit.png"/>
+## Training
 
-### Training :
+#### <ins>Building Segmentation Training:</ins> 
+**Validation Set Dice score(IOU)** : **0.86**
 
-#### Building Segmentation Training  
-
-Validation Set Dice score(IOU) : 0.86
-
-#### Damaged Area Segmentation Training 
-
-Validaton Set Dice score(IOU) : 0.87
+#### <ins>Damaged Area Segmentation Training</ins> 
+Validaton Set Dice score(IOU) : **0.87**
 
 
 ## Predictions
-### VHR Image:
 
-<img src="https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis/blob/main/Images/pred_img.png"/>
+|    **VHR Image(Input)**   |   **Generated Mask Image(Output)** |
+|  ------------------------- | ---------------------------------- |
+|  ![real1](https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis/blob/main/Images/pred_img.png)             | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/3.%20Satellite%20Image%20Segmentation%20for%20Flood%20Damage%20Analysis/Images/pred.png)                  |
 
-### Predictions
 
-<img src="https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis/blob/main/Images/pred.png"/>
-          
+         
 ## Conclusion
 
-We used an end-to-end trainable neural network architecture for multiresolution, multisensor, and multitemporal satellite images and showed that it can perform building footprint and flooded building segmentation tasks, and demonstrated that publicly available imagery alone can be used for effective segmentation of flooded buildings.
-Our approach is applicable to different types of flood events, and could be used to predict damage caused by other types of disasters.
-It substantially reduces the amount of time needed to produce flood maps for first responders compared to current methods.
+- Used an **end-to-end trainable neural network architecture for multiresolution, multisensor, and multitemporal satellite images** and showed that it can perform **building footprint and flooded building segmentation tasks** and demonstrated that publicly available imagery alone can be used for effective segmentation of flooded buildings.
+- Demonstrated approach is **applicable to different types of flood events** and could be **used to predict damage caused by other types of disasters**.
+- It substantially **reduces the amount of time needed to produce flood maps** for first responders compared to current methods.
