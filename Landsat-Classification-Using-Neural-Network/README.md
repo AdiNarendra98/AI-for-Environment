@@ -1,6 +1,6 @@
 # Landsat Classification Using Neural Networks
 
-**This the code for a step-by-step approach to the [**Playlist by Pratyush Tripathy**](https://www.youtube.com/playlist?list=PL5VtL7Y4tgIl_wNWdus4_CwWvmdKCH7bz) on Landsat 5 multispectral data classification or simple terms using neural networks to classify landcover in cities of Bangalore and Hyderabad(in this use-case)**
+**This the code for a step-by-step approach to the [**Playlist by Pratyush Tripathy**](https://www.youtube.com/playlist?list=PL5VtL7Y4tgIl_wNWdus4_CwWvmdKCH7bz) on Landsat 5 multispectral data classification or simple terms using neural networks to classify landcover in cities of Bangalore and Hyderabad(in this usecase)**
 
 ## Results
 
