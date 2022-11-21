@@ -4,10 +4,10 @@
 
 ## Results
 
-- ### <ins>Hyderabad built-up layer as predicted by the model using the Multispectral Data</ins>
+- <ins>**Hyderabad built-up layer as predicted by the model using the Multispectral Data**</ins>
 
 <p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/Landsat-Classification-Using-Neural-Network/images/Hyd%20O:P.gif" width="800" height="400"><br>
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/1.%20Landsat%20Classification%20Using%20Neural%20Network/images/Hyd%20O:P.gif" width="800" height="400"><br>
 </p>
 
 
@@ -16,14 +16,14 @@
 
 
 <p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/Landsat-Classification-Using-Neural-Network/images/ss1.png " width="800" height="400"><br>
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/1.%20Landsat%20Classification%20Using%20Neural%20Network/images/ss1.png " width="800" height="400"><br>
 <b>Histogram of the Landsat 5 Multispectral</b><br>
 </p>
 
 - <ins>**Training Data Sample**</ins>:
 
 <p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/Landsat-Classification-Using-Neural-Network/images/Beng%20Train.webp  " width="800" height="400"><br>
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/1.%20Landsat%20Classification%20Using%20Neural%20Network/images/Beng%20Train.webp " width="800" height="400"><br>
 <b>Multispectral training data and its corresponding binary built-up layer of Bangalore City</b><br>
 </p>
 
