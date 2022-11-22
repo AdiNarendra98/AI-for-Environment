@@ -33,7 +33,10 @@
 </p>
 
 <p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Training%20vs%20Epochs%20Graph.png " width="650" height="400"><br>
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/confusion_matrix.png " width="600" height="600"><br>
 <b>Confusion Matrix of the Model</b><br>
 </p>
+
+### Predictions
+
 
