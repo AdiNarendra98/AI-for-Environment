@@ -13,7 +13,7 @@
 
 ## Dataset
 - Used the **FloodNet Dataset**: [Download Link](https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021)
-- It is a high-resolution image dataset acquired by a small UAV platform, DJI Mavic Pro quadcopters, after Hurricane Harvey.
+- It is a high-resolution image dataset **acquired by a small UAV platform, DJI Mavic Pro quadcopters, after Hurricane Harvey**.
 - These high resolution **(3000x4000x3) 2343 images** are accompanied by detailed semantic annotation regarding the damages.
 - To advance the damage assessment process for post-disaster scenarios, the dataset provides a unique challenge considering **classification, semantic segmentation and visual question answering**.
 
@@ -31,5 +31,5 @@
 | [**Inference_Seg.ipynb**](https://github.com/sahilkhose/FloodNet/blob/main/Inference_Seg.ipynb)   | **Segmentation inference for Demo**|
 
 ## References
-- [FloodNet: A High Resolution Aerial Imagery Dataset for Post Flood Scene Understanding](https://arxiv.org/abs/2012.02951) <a name="floodnet-cite"/>
-- Blog Link for the Paper: [Medium Link](https://sahilkhose.medium.com/paper-presentation-e9bd0f3fb0bf)
+- [**FloodNet: A High Resolution Aerial Imagery Dataset for Post Flood Scene Understanding**](https://arxiv.org/abs/2012.02951) <a name="floodnet-cite"/>
+- Blog Link for the Paper: [**Medium Link**](https://sahilkhose.medium.com/paper-presentation-e9bd0f3fb0bf)
