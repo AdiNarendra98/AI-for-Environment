@@ -1,4 +1,4 @@
-# WatNet: 
+# WatNet
 
 - A **Deep ConvNet for surface water mapping based on Sentinel-2 Image**.
 - This is a Re-implementation of the paper [**Xin Luo, Xiaohua Tong, Zhongwen Hu. An applicable and automatic method for earth surface water mapping based on multispectral images. International Journal of Applied Earth Observation and Geoinformation, 2021**](https://www.sciencedirect.com/science/article/pii/S0303243421001793)
