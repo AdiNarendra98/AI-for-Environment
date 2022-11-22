@@ -1,5 +1,5 @@
 ## Satellite Image-Segmentation for Flood-Damage Analysis
-This repo is for the reimplementation of the work done by [Kunal](https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis) for segmenting satellite images for analyzing flood damages using publicly available images and data.
+- This repo is for the reimplementation of a model made for segmenting satellite images for analyzing flood damages using publicly available images and data.
 
 ## Dataset
 
@@ -74,3 +74,7 @@ Validaton Set Dice score(IOU) : **0.87**
 - Used an **end-to-end trainable neural network architecture for multiresolution, multisensor, and multitemporal satellite images** and showed that it can perform **building footprint and flooded building segmentation tasks** and demonstrated that publicly available imagery alone can be used for effective segmentation of flooded buildings.
 - Demonstrated approach is **applicable to different types of flood events** and could be **used to predict damage caused by other types of disasters**.
 - It substantially **reduces the amount of time needed to produce flood maps** for first responders compared to current methods.
+
+## Inspiration
+
+- This model was inspired by the work by [**Kunal**](https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis)
