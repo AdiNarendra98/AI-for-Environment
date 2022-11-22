@@ -1,5 +1,5 @@
 ## Satellite Image-Segmentation for Flood-Damage Analysis
-- This repo is for the reimplementation of a model made for segmenting satellite images for analyzing flood damages using publicly available images and data.
+- This repo is for the reimplementation of a model made for **segmenting satellite images for analyzing flood damages using publicly available images and data**.
 
 ## Dataset
 
