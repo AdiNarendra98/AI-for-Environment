@@ -1,6 +1,6 @@
 # Detection of Floating Objects using Sentinel 2
 
-- Re-implementation of the paper[TOWARDS DETECTING FLOATING OBJECTS ON A GLOBAL SCALE WITH LEARNED SPATIAL FEATURES USING SENTINEL 2, ISPRS Ann.](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/V-3-2021/285/2021/) 
+- Re-implementation of the paper [**TOWARDS DETECTING FLOATING OBJECTS ON A GLOBAL SCALE WITH LEARNED SPATIAL FEATURES USING SENTINEL 2**, ISPRS Ann.](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/V-3-2021/285/2021/) 
 
 
 ## Results
