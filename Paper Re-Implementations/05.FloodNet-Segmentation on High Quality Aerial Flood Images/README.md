@@ -1,17 +1,17 @@
-<div align="center">
+## FloodNet-Semi-Supervised Classification and Segmentation on High Resolution Aerial Flood Images
   
-# Semi-Supervised Classification and Segmentation on High Resolution Aerial Images
- [Sahil Khose](https://github.com/sahilkhose), [Abhiraj Tiwari](www.github.com/abhirajtiwari), [Ankita Ghosh](https://github.com/ankitaghosh9)
-</div>
+- Reimplementation of the paper [**Semi-Supervised Classification and Segmentation on High Resolution Aerial Images**](https://arxiv.org/abs/2105.08655).
 
---------------------------------------------------------------------------------------------
-
-Official implementation of https://arxiv.org/abs/2105.08655 paper. <br>
-This paper was submitted in Earthvision 2021 workshop (CVPR 2021) under Floodnet[<sup>[1]</sup>](#floodnet-cite) task. <br><br>
-:partying_face: Update: This paper was accepted at the **Tackling Climate Change with ML workshop** at **NeurIPS 2021**. <br>
-
-## Checkout our model predictions!
+## Results
 - It is available [here](https://share.streamlit.io/sahilkhose/floodnet/main/stream_app.py) on Streamlit Sharing.
+
+## Dataset
+- Used the **FloodNet Dataset**: [Download Link](https://github.com/BinaLab/FloodNet-Challenge-EARTHVISION2021)
+- It is a high-resolution image dataset acquired by a small UAV platform, DJI Mavic Pro quadcopters, after Hurricane Harvey.
+- These high resolution **(3000x4000x3) 2343 images** are accompanied by detailed semantic annotation regarding the damages.
+- To advance the damage assessment process for post-disaster scenarios, the dataset provides a unique challenge considering **classification, semantic segmentation and visual question answering**.
+
+
 
 ## Scripts
 | Notebook                  | Task                           |
