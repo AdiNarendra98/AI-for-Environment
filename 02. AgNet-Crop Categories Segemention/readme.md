@@ -7,9 +7,9 @@
 
 | **Original Ground Truth Image** | **Generated Mask Image** |
 | ------------- | ------------- |
-| ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/real2.png) | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/pred1.png)  |
-| ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/real1.png)  | ![pred2](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/pred2.png)  |
-| ![real3](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/real3.png)  |  ![pred3](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/pred3.png)  |
+| ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/02.%20AgNet-Crop%20Categories%20Segemention/Images/real2.png) | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/pred1.png)  |
+| ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/02.%20AgNet-Crop%20Categories%20Segemention/Images/real1.png)  | ![pred2](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/pred2.png)  |
+| ![real3](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/02.%20AgNet-Crop%20Categories%20Segemention/Images/real3.png)  |  ![pred3](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/02.%20AgNet-Crop%20Categories%20Segemention/Images/pred3.png)  |
 
 ## Dataset
 - ### Agnet Dataset: [Link](https://github.com/ZihengSun/Ag-Net-Dataset)
@@ -25,7 +25,7 @@
    * Use of **PRelu and Leaky Relu**.
 
 <p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/2.%20AgNet-Crop%20Categories%20Segemention/Images/Model%20Modifications.png" width="350" height="350"><br>
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/02.%20AgNet-Crop%20Categories%20Segemention/Images/Model%20Modifications.png" width="350" height="350"><br>
 <b>Modifications to Architecture</b><br>
 </p>
 
