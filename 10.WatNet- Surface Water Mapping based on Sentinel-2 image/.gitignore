@@ -1,0 +1,10 @@
+data/dset-s2/*
+data/tfrecord-s2/*
+data/test-data
+result/
+data/visual-data-gis
+model/pretrained/*
+!model/pretrained/watnet*
+.vscode
+.DS_Store
+*__pycache__/
