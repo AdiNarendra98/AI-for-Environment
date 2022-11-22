@@ -22,7 +22,7 @@
 ## Image Patches
 | Patches |
 | ------------- |
-| ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/3.%20Satellite%20Image%20Segmentation%20for%20Flood%20Damage%20Analysis/Images/patches.png) |
+| ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/03.%20Satellite%20Image%20Segmentation%20for%20Flood%20Damage%20Analysis/Images/patches.png) |
 
 
 ## Training
@@ -65,7 +65,7 @@ Validaton Set Dice score(IOU) : **0.87**
 
 |    **VHR Image(Input)**   |   **Generated Mask Image(Output)** |
 |  ------------------------- | ---------------------------------- |
-|  ![real1](https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis/blob/main/Images/pred_img.png)             | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/3.%20Satellite%20Image%20Segmentation%20for%20Flood%20Damage%20Analysis/Images/pred.png)                  |
+|  ![real1](https://github.com/orion29/Satellite-Image-Segmentation-for-Flood-Damage-Analysis/blob/main/Images/pred_img.png)             | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/03.%20Satellite%20Image%20Segmentation%20for%20Flood%20Damage%20Analysis/Images/pred.png)                  |
 
 
          
