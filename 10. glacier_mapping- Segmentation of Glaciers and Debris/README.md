@@ -5,7 +5,9 @@ The goal of this project is to use **U-Net to automatically segment
 debris and ice glaciers from satellite images**.
 
 ## Results
-![Image-Mask Pair](imgs/image_mask.png)
+
+<img width="823" alt="ss1" src="https://user-images.githubusercontent.com/106218100/203313501-94a09d37-3495-4fba-a833-efe216adf969.png">
+
 
 ## Pipeline
 

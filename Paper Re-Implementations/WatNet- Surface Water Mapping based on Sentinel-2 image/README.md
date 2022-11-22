@@ -1,23 +1,23 @@
-# WatNet: 
+# WatNet
 
 - A **Deep ConvNet for surface water mapping based on Sentinel-2 Image**.
 - This is a Re-implementation of the paper [**Xin Luo, Xiaohua Tong, Zhongwen Hu. An applicable and automatic method for earth surface water mapping based on multispectral images. International Journal of Applied Earth Observation and Geoinformation, 2021**](https://www.sciencedirect.com/science/article/pii/S0303243421001793)
 
 
 ## Results
-- Examples for surface water mapping  
+- Examples for **Surface Water Mapping**  
 
-  **Urban region**  
+  **Urban Region**  
   |Urban scene|AWEI|MNDWI|WatNet|  
   |:--|:--|:--|:--|  
   |<img src='figures/urban/urban-scene.png' width =180, height=150>|<img src='figures/urban/urban-awei.png' width=180, height=150>|<img src='figures/urban/urban-mndwi.png' width=180, height=150>|<img src='figures/urban/urban-watnet.png' width=180, height=150>|
 
-  **Cloudy region**  
+  **Cloudy Region**  
   |Cloudy scene|AWEI|OBIA|WatNet|  
   |:--|:--|:--|:--|  
   |<img src='figures/cloudy/cloudy-scene.png' width =180, height=150>|<img src='figures/cloudy/cloudy-awei.png' width =180, height=150>|<img src='figures/cloudy/cloudy-obia.png' width=180, height=150>|<img src='figures/cloudy/cloudy-watnet.png' width=180, height=150>|
 
-  **Mountainous region**  
+  **Mountainous Region**  
   |Mountain scene|AWEI|OBIA|WatNet|  
   |:--|:--|:--|:--|  
   |<img src='figures/mountain/mountain-scene.png' width =180, height=150>|<img src='figures/mountain/mountain-awei.png' width =180, height=150>|<img src='figures/mountain/mountain-obia.png' width=180, height=150>|<img src='figures/mountain/mountain-watnet.png' width=180, height=150>|
@@ -77,9 +77,3 @@
   year = {2021}
   }
   ```
-
-
-## -- Acknowledgement  
-- We thanks the authors for providing some of the code in this repo:  
-[deeplabv3_plus](https://github.com/luyanger1799/amazing-semantic-segmentation) and [deepwatmapv2](https://github.com/isikdogan/deepwatermap)  
-
