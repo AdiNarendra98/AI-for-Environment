@@ -1,5 +1,4 @@
 # Antarctic fracture detection with U-Net
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3949427.svg)](https://doi.org/10.5281/zenodo.3949427)
 - Reimplementation of [**Vulnerability of Antarctica’s ice shelves to meltwater-driven fracture**](https://www.nature.com/articles/s41586-020-2627-8) which uses **U-Net** to detect fracture locations from satellite imagery across Antarctica **125m-resolution MOA imagery (2009)**. 
 - Ice fractures result in the collapse of Antartctica ice-shelves, which can accelerate glacier flows into the ocean. We trained the U-Net with the labeled imagery, and applied the trained model to detect fracture across the Antarctic ice shelves.
 
@@ -32,4 +31,6 @@ Input images and the corresponding labeled images are in the format of .tif. The
 
 
 ## Citation:
-C. Y. Lai, J. Kingslake, M. Wearing, P.-H. Cameron Chen, P. Gentine, H. Li, J. Spergel, J. M. van Wessem, “Vulnerability of Antarctica’s ice shelves to meltwater-driven fracture," Nature, 584, 574–578 (2020). [doi: 10.1038/s41586-020-2627-8](https://www.nature.com/articles/s41586-020-2627-8)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3949427.svg)](https://doi.org/10.5281/zenodo.3949427)
+- **C. Y. Lai, J. Kingslake, M. Wearing, P.-H. Cameron Chen, P. Gentine, H. Li, J. Spergel, J. M. van Wessem, “Vulnerability of Antarctica’s ice shelves to meltwater-driven fracture," Nature, 584, 574–578 (2020)**.[doi: 10.1038/s41586-020-2627-8](https://www.nature.com/articles/s41586-020-2627-8)
+
