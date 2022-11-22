@@ -42,9 +42,10 @@
 | **Original Ground Truth Image** | **Generated Mask Image** |
 | ------------- | ------------- |
 | <p align="center"><img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Input%201.jpg "><br><b>Land with Highway </b><br> | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Output1.png)  |
-| <p align="center"><img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Input%202.jpg "><br><b>Same Land with Factory(After 2 years) </b><br> | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Output1.png)  |
+| <p align="center"><img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Input%202.jpg "><br><b>Same Land with Factory(After 2 years) </b><br> | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/op2.png)  |
 
+## Inspiration
 
-
+- This work is reimplemented and inspired from the work done by [**Luigi Selmi**](https://github.com/luigiselmi).
 
 
