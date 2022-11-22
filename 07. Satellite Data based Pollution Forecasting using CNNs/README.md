@@ -14,7 +14,7 @@
 - The experiments found that one model achieved an Accuracy rate of **85.15% in binary classification** of pollution, and another model achieved an Accuracy rate of **72.70% in 10-class classification** of pollution.This study demonstrates that satellite images, which are inexpensive and ubiquitous, are accurate in predicting air pollution.
 
 <p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/7.%20Satellite%20Data%20based%20Pollution%20Forecasting%20using%20CNNs/Images/Results.png " width="700" height="450"><br>
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/07.%20Satellite%20Data%20based%20Pollution%20Forecasting%20using%20CNNs/Images/Results.png " width="700" height="450"><br>
 <b>Training vs Validation Accuracy Graphs of All Tested Models</b><br>
 </p>
 
