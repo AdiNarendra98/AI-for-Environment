@@ -7,6 +7,10 @@
 1. [**U-Net**](https://arxiv.org/abs/1505.04597)
 2. [**LinkNet**](https://arxiv.org/abs/1707.03718)
 
+<p align="center">
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/1.%20Landsat%20Classification%20Using%20Neural%20Network/images/ss1.png " width="800" height="400"><br>
+<b>Histogram of the Landsat 5 Multispectral</b><br>
+</p>
 
 
 ## Results
