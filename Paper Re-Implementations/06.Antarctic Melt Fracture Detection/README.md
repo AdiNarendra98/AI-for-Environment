@@ -1,9 +1,15 @@
 # Antarctic fracture detection with U-Net
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3949427.svg)](https://doi.org/10.5281/zenodo.3949427)
+- Reimplementation of [**Vulnerability of Antarctica’s ice shelves to meltwater-driven fracture**](https://www.nature.com/articles/s41586-020-2627-8) which uses **U-Net** to detect fracture locations from satellite imagery across Antarctica **125m-resolution MOA imagery (2009)**. 
+- Ice fractures result in the collapse of Antartctica ice-shelves, which can accelerate glacier flows into the ocean. We trained the U-Net with the labeled imagery, and applied the trained model to detect fracture across the Antarctic ice shelves.
 
-We use **U-Net** to detect fracture locations from satellite imagery across Antarctica (125m-resolution MOA imagery (2009); [https://doi.org/10.7265/N5KP8037](https://doi.org/10.7265/N5KP8037)). Ice fractures result in the collapse of Antartctica ice-shelves, which can accelerate glacier flows into the ocean. We trained the U-Net with the labeled imagery, and applied the trained model to detect fracture across the Antarctic ice shelvse. In Fig. 1 the fracture/non-fracture locations are marked in white/black. The neural-network predicted continent-wide fracture locations (Fig. 1) is available at https://doi.org/10.15784/601372.
+## Results
+### Fig. 2. Model prediction
+<img src="https://github.com/chingyaolai/Antarctic-fracture-detection/blob/master/images/test.png" width="800">
 
-The [Tensorflow U-Net](https://tf-unet.readthedocs.io/en/latest/installation.html) implementation was developed by Akeret et al. (2017) and available at [https://github.com/jakeret/tf_unet](https://github.com/jakeret/tf_unet). 
+## Datasets
+- Data has been taken from [**NSIDC**](https://nsidc.org/data/nsidc-0593/versions/2)
+- In Fig. 1 the fracture/non-fracture locations are marked in white/black. The neural-network predicted continent-wide fracture locations(in Fig.1) available [**here**](https://doi.org/10.15784/601372.)
 
 #### Fig. 1. Locations of the training/validation/testing data and continent-wide fracture predictions
 ![Frac](https://github.com/chingyaolai/Antarctic-fracture-detection/blob/master/images/dataloc.PNG)
@@ -24,8 +30,6 @@ Input images and the corresponding labeled images are in the format of .tif. The
 - **Fracture_prediction_demo.ipynb**: example code for training and testing UNet
 <br/>
 
-#### Fig. 2. Model prediction
-<img src="https://github.com/chingyaolai/Antarctic-fracture-detection/blob/master/images/test.png" width="800">
 
 ## Citation:
 C. Y. Lai, J. Kingslake, M. Wearing, P.-H. Cameron Chen, P. Gentine, H. Li, J. Spergel, J. M. van Wessem, “Vulnerability of Antarctica’s ice shelves to meltwater-driven fracture," Nature, 584, 574–578 (2020). [doi: 10.1038/s41586-020-2627-8](https://www.nature.com/articles/s41586-020-2627-8)
