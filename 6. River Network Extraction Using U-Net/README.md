@@ -34,4 +34,4 @@
 
 
 ## Inspiration
-- This is code is **reimplementation of the work done by** [**Diwas Pandey**](https://github.com/Diwas524/River-Network-Extraction-from-Satellite-Image-using-UNet-and-Tensorflow)
+- This is code is **reimplementation of the work done by Diwas Pandey**.
