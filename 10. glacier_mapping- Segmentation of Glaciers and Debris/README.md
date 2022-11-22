@@ -1,8 +1,10 @@
 # Glacier Mapping From Satellite Imagery
 
 ## Overview
-The goal of this project is to use computer vision to automatically segment
-debris and ice glaciers from satellite images
+The goal of this project is to use **U-Net to automatically segment
+debris and ice glaciers from satellite images**.
+
+## Results
 
 
 
