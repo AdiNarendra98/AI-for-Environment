@@ -13,7 +13,7 @@
 - Apart from that additional images have been already created in the previous step from the original ones by using the **Data Augmentation techniques** implemented by the [fastai's](https://docs.fast.ai/vision.augment.html) ``aug_transforms()``function.
 
 <p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/data_augmentation.png " width="600" height="550"><br>
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/08.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/data_augmentation.png " width="600" height="550"><br>
 <b>Sample of Images formed by Data Augumentation</b><br>
 </p>
 
@@ -21,19 +21,19 @@
 
 - Used [**ResNet50**](https://arxiv.org/abs/1512.03385) for this study.
 <p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Resnet%2050%20archi.png " width="700" height="400"><br>
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/08.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Resnet%2050%20archi.png " width="700" height="400"><br>
 <b>ResNet50 Architecture </b><br>
 </p>
 
 ## Results
 - **Accuracy = ~98%**
 <p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Training%20vs%20Epochs%20Graph.png " width="650" height="400"><br>
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/08.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Training%20vs%20Epochs%20Graph.png " width="650" height="400"><br>
 <b>Accuracy vs Epochs Graph</b><br>
 </p>
 
 <p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/confusion_matrix.png " width="600" height="600"><br>
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/08.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/confusion_matrix.png " width="600" height="600"><br>
 <b>Confusion Matrix of the Model</b><br>
 </p>
 
@@ -41,8 +41,8 @@
 
 | **Original Ground Truth Image** | **Generated Mask Image** |
 | ------------- | ------------- |
-| <p align="center"><img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Input%201.jpg "><br><b>Land with Highway </b><br> | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Output1.png)  |
-| <p align="center"><img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Input%202.jpg "><br><b>Same Land with Factory(After 2 years) </b><br> | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/8.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/op2.png)  |
+| <p align="center"><img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/08.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Input%201.jpg "><br><b>Land with Highway </b><br> | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/08.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Output1.png)  |
+| <p align="center"><img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/08.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/Input%202.jpg "><br><b>Same Land with Factory(After 2 years) </b><br> | ![real1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/08.%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20a%20ResNet/Images/op2.png)  |
 
 ## Inspiration
 
