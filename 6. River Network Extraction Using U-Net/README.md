@@ -1,6 +1,10 @@
 # River Network Extraction from Satellite Image using UNet
 
 - This work presents an initial model for **detecting rivers and watersheds from satellite pictures** in this study, which was based on image processing methodology using **U-Net**. 
+<p align="center">
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/6.%20River%20Network%20Extraction%20Using%20U-Net/Images/Output%202.png " width="800" height="400"><br>
+<b>Sample Predictions</b><br>
+</p>
 
 ## Dataset
 
@@ -8,7 +12,7 @@
 - Two different directories contain **2269 images** each where one represents original satellite images and the other masks generated images.
 
 <p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/6.%20River%20Network%20Extraction%20Using%20U-Net/Images/Dataset%20Example.png " width="800" height="400"><br>
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/6.%20River%20Network%20Extraction%20Using%20U-Net/Images/Dataset%20Example.png " width="600" height="450"><br>
 <b>Sample of Training Images</b><br>
 </p>
 
@@ -17,7 +21,7 @@
 ## Proposed Model
 
 <p align="center">
-<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/6.%20River%20Network%20Extraction%20Using%20U-Net/Images/Proposed%20Model.png " width="300" height="700"><br>
+<img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/6.%20River%20Network%20Extraction%20Using%20U-Net/Images/Proposed%20Model.png " width="150" height="450"><br>
 <b>Flowchart of Proposed Model</b><br>
 </p>
 
@@ -26,14 +30,7 @@
 | **Sample Images vs Prediction** |
 | -------------------------- |
 | ![image1](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/6.%20River%20Network%20Extraction%20Using%20U-Net/Images/Output%201.png)                           |
-|       ![image2](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/6.%20River%20Network%20Extraction%20Using%20U-Net/Images/Output%203.png)                     |
-
-
-
-
-
-
-
+| ![image2](https://github.com/AdiNarendra98/AI-for-Environment/blob/main/6.%20River%20Network%20Extraction%20Using%20U-Net/Images/Output%203.png)                     |
 
 
 ## Inspiration
