@@ -4,11 +4,7 @@
 The goal of this project is to use computer vision to automatically segment
 debris and ice glaciers from satellite images
 
-Requirements are specified in `requirements.txt`. The full package sources is
-available in the `glacier_mapping` directory. Raw training data are Landsat 7
-tiff images from the Hindu-Kush-Himalayan region. We consider the region of
-Bhutan and Nepal. Shapefile labels of the glaciers are provided by
-[ICIMOD](www.icimod.org)
+
 
 ## Pipeline
 
@@ -29,6 +25,17 @@ At each step, the following intermediate files are created,
 * `glacier_mapping.train.*` --> creates data/runs/run_name folder, containing logs/ with tensorboard logs and models/ with all checkpoints
 
 ![pipeline](imgs/pipeline.jpeg)
+
+
+## Requirements
+- Requirements are specified in `requirements.txt`. The full package sources is
+available in the `glacier_mapping` directory. 
+
+## Dataset
+- Raw training data are **Landsat 7 tiff images from the Hindu-Kush-Himalayan region**. 
+- This study works on the **regions of Bhutan and Nepal**. 
+- Shapefile labels of the glaciers are provided by [**ICIMOD**](https://www.icimod.org)
+
 ### Data Preprocessing:
 
 1. **Slicing**: We slice the input tiffs into 512x512 tiles. The resulting tiles
@@ -58,19 +65,20 @@ At each step, the following intermediate files are created,
 6. **Normalization**: We normalize the final dataset based on the means and
    standard deviations calclualted.
 
-![Image-Mask Pair](imgs/image_mask.png)
 
-### Model Training
-Model: Unet with dropout (default dropout rate is 0.2).
-
-## vector data sources
+### Vector Data Sources
 Labels : [ICIMOD](http://www.icimod.org/)
 
-* [(2000, Nepal)](http://rds.icimod.org/Home/DataDetail?metadataId=9351&searchlist=True): Polygons older/newer than 2 years from 2000 are filtered out. Original collection contains few polygons from 1990s
-* [(2000, Bhutan)](http://rds.icimod.org/Home/DataDetail?metadataId=9357&searchlist=True): Used as it's
-* [(2010, Nepal)](http://rds.icimod.org/Home/DataDetail?metadataId=9348&searchlist=True): Polygons older/newer than 2 years from 2010 are filtered out. Original collection is for 1980-2010
-* [(2010, Bhutan)](http://rds.icimod.org/Home/DataDetail?metadataId=9358&searchlist=True): Used as it's
+* [**2000, Nepal**](http://rds.icimod.org/Home/DataDetail?metadataId=9351&searchlist=True): Polygons older/newer than 2 years from 2000 are filtered out. Original collection contains few polygons from 1990s
+* [**2010, Nepal**](http://rds.icimod.org/Home/DataDetail?metadataId=9348&searchlist=True): Polygons older/newer than 2 years from 2010 are filtered out. Original collection is for 1980-2010
+* [**2000, Bhutan**](http://rds.icimod.org/Home/DataDetail?metadataId=9357&searchlist=True)
+* [**2010, Bhutan**](http://rds.icimod.org/Home/DataDetail?metadataId=9358&searchlist=True)
 
-## License
+## Model Training
+- [**U-Net**](https://arxiv.org/abs/1505.04597) with **dropout (default dropout rate is 0.2)**.
 
-Code open source for anyone to use as it's under [MIT License](https://opensource.org/licenses/MIT)
+
+## Inspiration
+
+- This is the reimplementation of workdone by **Kris Sankaran**.
+
