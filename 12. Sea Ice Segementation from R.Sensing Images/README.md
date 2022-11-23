@@ -1,20 +1,15 @@
 # Sea Ice Remote Sensing
-
-**Authors**: [Sangwon Lim](https://github.com/sum1lim) and [Omar Kawach](https://github.com/omarkawach)
-
-**Purpose**: Submission for the group project in University of Victoria's Artificial Intelligence course (ECE 470). 
-
-**Description**: Get a model and see if it can be applicable to other data.
+- This is repo is for a project that uses **Deep Networks for Sea Ice Concentration classification from Remote Sensing Images**.
 
 ## Summary of the Project
 - Sea ice concentration classification models generated using Deep Learning architectures
-- Utilized Gray Level Co-occurrence Matrix (GLCM) products for feature engineering
+- Utilized **Gray Level Co-occurrence Matrix (GLCM)** products for feature engineering
 - Devised the training and test data splitting strategy to mitigate the spatial auto-correlation in training
-- Utilized 1D-CNN to generate convolved features for maximized relationships between optical bands 
-- Devised a deep learning architecture concatenating Multi-layer Neural Network and 1D-CNN
-- Identified the optimum feature selections, architectures and classification scheme for the problem
-- Model assessments based on confusion matrices, accuracy and F1 score
-- 47.65% accuracy on 8-class classification comparable to existing 2D-CNN model’s 55.3% that was tested without consideration of spatial auto-correlation
+- Utilized **1D-CNN to generate convolved features for maximized relationships between optical bands** 
+- Devised a **deep learning architecture concatenating Multi-layer Neural Network and 1D-CNN**
+- Identified the **optimum feature selections, architectures and classification scheme** for the problem
+- Model assessments based on **confusion matrices, accuracy and F1 score**
+- **47.65% accuracy** on 8-class classification comparable to existing 2D-CNN model’s **55.3%** that was tested without consideration of spatial auto-correlation
 
 ## Getting Started
 
