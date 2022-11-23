@@ -173,3 +173,5 @@ A series of validation data images, true masks, and predicted masks are shown be
 | <img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/12.Hudson%20Bay's%20Sea%20Ice%20Segmentation/Images/pred9.png" width="600" />
 | <img src="https://github.com/AdiNarendra98/AI-for-Environment/blob/main/12.Hudson%20Bay's%20Sea%20Ice%20Segmentation/Images/pred10.png" width="600" />|
  
+## Inspiration
+- This work was inspieed from and originally done by **Alex Sylvester**
