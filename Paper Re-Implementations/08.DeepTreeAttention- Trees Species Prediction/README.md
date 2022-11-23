@@ -5,8 +5,9 @@ DeepTreeAttention-
 - The paper proposes an **attention aided CNN model for spectral-spatial classification of hyperspectral images** used for tree species prediction.
 
 # Model Architecture
-
-![](www/model.png)
+<p align='center'>
+<img width="850" alt="model" src="https://user-images.githubusercontent.com/106218100/203492619-2df945ff-6bb7-4af9-a841-f92e50d33551.png">
+</p>
 
 Project Organization
 ------------
@@ -134,65 +135,4 @@ class MetadataModel(main.TreeModel):
         return loss
 
 ```
-
-## Getting Started (UF - collaboration)
-
-This section is meant solely for members of the idtrees group who have access to the data.
-
-1) Fork this repo and install the conda environment.
-
-```
-conda env create -f=environment.yml
-conda activate DeepTreeAttention
-```
-
-2) Update the config.yml
-
-Currently, only members of the ewhite group have permissions to the raw NEON data.
-
-For example:
-
-```
-rgb_sensor_pool: /orange/ewhite/NeonData/*/DP3.30010.001/**/Camera/**/*.tif
-```
-
-This is not a problem, just set 
-
-```
-regenerate: False
-```
-
-and it will bypass these steps and use the existing train/test split (e.g. data/processed/train.csv) 
-
-You will need to set the correct crop directories
-
-```
-crop_dir: /blue/ewhite/b.weinstein/DeepTreeAttention/crops/
-```
-To wherever the crops are saved. This is currently 
-
-```
-/orange/idtrees-collab/DeepTreeAttention/crops/
-```
-
-I highly recommend making a comet login. Change
-
-```
-#Comet dashboard
-comet_workspace: bw4sz
-```
-to your usename and add a [.comet.config file](https://www.comet.ml/docs/python-sdk/advanced/#non-interactive-setup) to authenticate.
-
-3) Submit a job
-
-Submit a SLURM job
-
-```
-sbatch SLURM/experiment.sh
-```
-
-4) Look at the comet repo for results
-
-The metrics tab has the Micro and Macro Accuracy.
-
 
