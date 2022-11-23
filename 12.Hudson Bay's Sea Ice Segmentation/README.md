@@ -18,13 +18,13 @@
     -  **Model Accuracy: 83%**
     -  **Model Mean IoU (intersection over union) score: 0.44**
 - Generated sea ice concentrations masks for each image using Canadian Regional Ice Chart shapefiles.
-- Found a strong class imbalance favoring thick solid ice due to complete freezing in the winter months. Future work should focus on collecting more data during the spring months when ice is thawing and there is a greater variety in ice concentration.
+- Found a **strong class imbalance favoring thick solid ice due to complete freezing in the winter months**. Future work should focus on collecting more data during the spring months when ice is thawing and there is a greater variety in ice concentration.
 - Future work could also take advantage of additional satellite wavelength collection bands beyond the visible spectrum.
 - 
 ## Code/Resources
 
 - **Python Version:** 3.7.10  
-**Libraries Used:** eolearn, sentinelhub, numpy, pandas, matplotlib, geopandas, sklearn, tensorflow, keras
+- **Libraries Used:** eolearn, sentinelhub, numpy, pandas, matplotlib, geopandas, sklearn, tensorflow, keras
 
 - **Ice Chart Masks:** [Canadian Ice Service, . 2009. Canadian Ice Service Arctic Regional Sea Ice Charts in SIGRID-3 Format, Version 1. Subset: Hudson Bay Regional Ice Charts. Boulder, Colorado USA. NSIDC: National Snow and Ice Data Center](https://doi.org/10.7265/N51V5BW9)
 
