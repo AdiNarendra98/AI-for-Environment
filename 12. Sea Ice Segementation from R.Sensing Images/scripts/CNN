@@ -1,0 +1,181 @@
+#!/usr/bin/env python3
+import sys
+import os
+import shutil
+import argparse
+import numpy as np
+from sea_ice_rs.utils import decompose_filepath
+from sea_ice_rs.ML_tools import (
+    config_parser,
+    calculate_hidden_layer_size,
+    process_data,
+    learning_curve,
+    tr_val_split,
+)
+from tensorflow.keras import Input
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Dense, Conv1D, Flatten, concatenate
+from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
+
+
+def CNN(
+    hidden_layer_size, conv_layer_size, cat_layer_size, output_layer_size, kernel_size
+):
+
+    conv_input = Input(shape=(conv_layer_size, 1), name="conv")
+    cat_input = Input(shape=(cat_layer_size), name="cat")
+    if cat_layer_size > 3:
+        cat_layer = Dense(
+            calculate_hidden_layer_size(cat_layer_size, output_layer_size),
+            activation="relu",
+        )(cat_input)
+
+    conv_layer = Conv1D(
+        64,
+        kernel_size,
+        activation="relu",
+        input_shape=(conv_layer_size, 1),
+        padding="causal",
+    )(conv_input)
+    conv_layer = Conv1D(64, kernel_size, activation="relu", padding="causal")(
+        conv_layer
+    )
+    conv_layer = Conv1D(64, kernel_size, activation="relu", padding="causal")(
+        conv_layer
+    )
+    conv_layer = Conv1D(64, kernel_size, activation="relu", padding="causal")(
+        conv_layer
+    )
+    conv_layer = Conv1D(64, kernel_size, activation="relu", padding="causal")(
+        conv_layer
+    )
+    conv_layer = Conv1D(64, kernel_size, activation="relu", padding="causal")(
+        conv_layer
+    )
+    conv_layer = Conv1D(64, kernel_size, activation="relu", padding="causal")(
+        conv_layer
+    )
+    conv_layer = Flatten()(conv_layer)
+
+    if cat_layer_size > 3:
+        # Turn off the layer if nothing to concatenate
+        conv_layer = concatenate([cat_layer, conv_layer])
+
+    hidden_layer = Dense(hidden_layer_size, activation="relu")(conv_layer)
+    output_layer = Dense(output_layer_size, activation="softmax")(hidden_layer)
+
+    model = Model(inputs=[conv_input, cat_input], outputs=[output_layer])
+
+    model.compile(
+        loss="sparse_categorical_crossentropy", optimizer="adam", metrics=["accuracy"]
+    )
+    model.summary()
+
+    return model
+
+
+def main(args):
+    # Parse configuration
+    train_data, _, num_epochs, hidden_size, verbosity, K, kernel_size = config_parser(
+        args.dl_config
+    )
+
+    # Set up results directory
+    config_dir, filename, _ = decompose_filepath(args.dl_config)
+    result_dir = os.path.join(
+        ".".join(config_dir.split("/")[:-1]), f"results/CNN_{filename}"
+    )
+    try:
+        os.mkdir(result_dir)
+    except FileExistsError:
+        shutil.rmtree(result_dir)
+        os.mkdir(result_dir)
+
+    # Verbosity == 1 --> sys.stdout
+    # Verbosity == 2 --> .log file
+    if verbosity == 2:
+        log_file = open(f"{result_dir}/train.log", "w")
+        sys.stdout = log_file
+
+    # Modify train dataset
+    X, Y_tr, _ = process_data(train_data, args.dl_config)
+    # Pad first few features at the end for convolution
+    X_conv = np.pad(
+        X[0 : X.shape[0], X.shape[1] - 21 : X.shape[1]],
+        ((0, 0), (0, kernel_size)),
+        "wrap",
+    )
+    # Training dataset for dense layer to concatenate after convolution
+    X_cat = X[0 : X.shape[0], 0 : X.shape[1] - 18]
+
+    # Define hidden layer size
+    input_layer_size = X.shape[1]
+    output_layer_size = len(np.unique(Y_tr))
+    hidden_layer_size = calculate_hidden_layer_size(
+        input_layer_size, output_layer_size, hidden_size
+    )
+
+    # K-fold classification
+    tr_val_pairs = tr_val_split(K, X, Y_tr)
+
+    for iter, (train, validation) in enumerate(tr_val_pairs):
+        print(
+            f"*************************** Fold #: {iter+1} ***************************",
+            file=sys.stdout,
+        )
+        checkpoint_path = f"{result_dir}/ckpt_{iter+1}"
+        cp_callback = ModelCheckpoint(
+            filepath=checkpoint_path, save_best_only=True, verbose=verbosity, mode="min"
+        )
+        es_callback = EarlyStopping(
+            monitor="val_loss", mode="min", verbose=verbosity, patience=50
+        )
+
+        model = CNN(
+            hidden_layer_size,
+            X_conv.shape[1],
+            X_cat.shape[1],
+            output_layer_size,
+            kernel_size,
+        )
+
+        # Format X for CNN
+        X_conv_tr = np.transpose([np.transpose(X_conv[train])])
+        X_conv_val = np.transpose([np.transpose(X_conv[validation])])
+
+        # Train the model
+        model_summary = model.fit(
+            x={"conv": X_conv_tr, "cat": X_cat[train]},
+            y=Y_tr[train],
+            epochs=num_epochs,
+            batch_size=1024,
+            verbose=verbosity,
+            validation_data=(
+                {"conv": X_conv_val, "cat": X_cat[validation]},
+                Y_tr[validation],
+            ),
+            callbacks=[cp_callback, es_callback],
+        )
+
+        # Plot the learning curve
+        learning_curve(model_summary.history, result_dir, iter)
+
+        if K == 1:
+            break
+
+    # stdout redirection closed
+    if verbosity == 2:
+        log_file.close()
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "--dl-config",
+        type=str,
+        help="YAML file containing the configuration for deep learning",
+    )
+
+    args = parser.parse_args()
+    main(args)

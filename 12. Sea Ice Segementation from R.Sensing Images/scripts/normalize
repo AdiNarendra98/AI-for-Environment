@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+import argparse
+import os
+import sys
+from sea_ice_rs.utils import decompose_filepath
+from sea_ice_rs.data_processing import normalize
+
+
+def main(args):
+    if os.path.isfile(args.input) == False or os.path.isfile(args.std_data) == False:
+        print("File(s) not existing", file=sys.stderr)
+        sys.exit(1)
+
+    decomposed = decompose_filepath(args.input)
+
+    df = normalize(args.input, args.std_data)
+
+    out = decomposed[0] + "/" + decomposed[1] + "_norm.csv"
+
+    df.to_csv(out, index=False)
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("--input", type=str, help="Path of dataset to be normalized")
+    parser.add_argument(
+        "--std-data", type=str, help="Dataset that provides normalization standard"
+    )
+
+    args = parser.parse_args()
+    main(args)
