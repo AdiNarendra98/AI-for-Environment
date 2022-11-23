@@ -1,11 +1,8 @@
-DeepTreeAttention
+DeepTreeAttention- 
 ==============================
 
-[![Github Actions](https://github.com/Weecology/DeepTreeAttention/actions/workflows/pytest.yml/badge.svg)](https://github.com/Weecology/DeepTreeAttention/actions/)
-
-Tree Species Prediction for the National Ecological Observatory Network (NEON)
-
-Implementation of Hang et al. 2020 [Hyperspectral Image Classification with Attention Aided CNNs](https://arxiv.org/abs/2005.11977) for tree species prediction.
+- This repo is an reimplementation of Tree Species Prediction for the  paper [**Hyperspectral Image Classification with Attention Aided CNNs**](https://arxiv.org/abs/2005.11977) 
+- The paper proposes an **attention aided CNN model for spectral-spatial classification of hyperspectral images** used for tree species prediction.
 
 # Model Architecture
 
