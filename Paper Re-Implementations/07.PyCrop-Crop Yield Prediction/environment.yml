@@ -1,0 +1,15 @@
+name: crop_yield_prediction
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - numpy
+  - gdal
+  - matplotlib
+  - scipy
+  - tqdm
+  - fire
+  - pytorch=1.0.0
+  - earthengine-api
