@@ -34,13 +34,3 @@
 
 
 
-
-## Citations
-- This repo was massively helpful for finding relevant projects,papers.Shoutout to them 🫡.
-```
-@misc{Cole_satellite-image-deep-learning,
-author = {Cole, Robin M.},
-title = {{satellite-image-deep-learning}},
-url = {https://github.com/robmarkcole/satellite-image-deep-learning}
-}
-```
