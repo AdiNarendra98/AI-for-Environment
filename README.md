@@ -1,5 +1,7 @@
 # AI-for-Environment
-- This repo was long-due which consists of all my re-implementations, models that were created for a works in AI Applications for Climate Change and Sustainability
+- This repo was long-due which consists of all my **re-implementations, models for various papers and projects** that were created for a works in **AI Applications for Climate Change and Sustainability**.
+- Most of them use data collected from Satellite and aerial Imagery. imagery systems like **Sentinel-2** etc.
+
 ## Table of Contents
  - ### Projects
     * [**01. Landsat Classification Using Neural Network**](https://github.com/AdiNarendra98/AI-for-Environment/tree/main/01.%20Landsat%20Classification%20Using%20Neural%20Network)
@@ -34,6 +36,7 @@
 
 
 ## Citations
+- This repo was massively helpful for finding relevant projects,papers.Shoutout to them 🫡.
 ```
 @misc{Cole_satellite-image-deep-learning,
 author = {Cole, Robin M.},
