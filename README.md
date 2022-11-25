@@ -1,5 +1,5 @@
 # AI for Environment
-- ## This repo was long-due which consists of all my **re-implementations, models for various papers and projects** that were created for a works in **AI Applications for Climate Change and Sustainability**.
+- #### This repo was long-due which consists of all my **re-implementations, models for various papers and projects** that were created for a works in **AI Applications for Climate Change and Sustainability**.
 - #### Most of them use data collected from Satellite and aerial Imagery. imagery systems like **Sentinel-2** etc.
 
 ## Table of Contents
