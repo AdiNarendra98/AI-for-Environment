@@ -18,6 +18,5 @@
 <b>Training vs Validation Accuracy Graphs of All Tested Models</b><br>
 </p>
 
-## Inspiration
-- This work is inspired by work done by **Arnav Bansal** .
+
 
