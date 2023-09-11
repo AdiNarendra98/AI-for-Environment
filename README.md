@@ -18,7 +18,7 @@
     * [**12.Hudson Bay's Sea Ice Segmentation**](https://github.com/AdiNarendra98/AI-for-Environment/tree/main/12.Hudson%20Bay's%20Sea%20Ice%20Segmentation)
     * [**13.Oil Tank Volume Estimation**](https://github.com/AdiNarendra98/AI-for-Environment/tree/main/13.Oil%20Tank%20Volume%20Estimation)
     
- - ### Papers
+ - ### Paper Implementations
     * [**01.Detection of Floating Objects using Sentinel 2 Images**](https://github.com/AdiNarendra98/AI-for-Environment/tree/main/Paper%20Re-Implementations/01.Detection%20of%20Floating%20Objects%20using%20Sentinel%202%20Images)
     * [**02.dlsim-Estimation of  inundation depth (maximum water level) and debris-flow-induced topographic deformation**](https://github.com/AdiNarendra98/AI-for-Environment/tree/main/Paper%20Re-Implementations/02.dlsim-Estimation%20of%20%20inundation%20depth%20(maximum%20water%20level)%20and%20debris-flow-induced%20topographic%20deformation)
     * [**03.TheColorOutOfSpace-learning self-supervised representations for Earth Observation imagery**](https://github.com/AdiNarendra98/AI-for-Environment/tree/main/Paper%20Re-Implementations/03.TheColorOutOfSpace-learning%20self-supervised%20representations%20for%20Earth%20Observation%20imagery)
